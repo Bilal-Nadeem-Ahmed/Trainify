@@ -1,13 +1,13 @@
 <template>
   <v-container class="fill-height">
     <v-responsive class="align-centerfill-height mx-auto" max-width="900">
-      <v-img class="mb-4" height="150" src="@/assets/logo.svg" />
+      <v-img class="mb-4" height="200" src="@/assets/logo.png" />
 
       <div class="text-center">
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
 
         <h1 class="text-h2 font-weight-bold">Trainify</h1>
-        <h1 class="text-body-2 font-weight-light">You'r Training Simplified</h1>
+        <h1 class="text-body-2 font-weight-light">Your Training Simplified</h1>
       </div>
 
       <div class="py-4" />
@@ -17,7 +17,7 @@
           <v-card
             class="py-4"
             color="surface-variant"
-            image="https://cdn.vuetifyjs.com/docs/images/one/create/feature.png"
+            image="@/assets/feature-chart.png"
             prepend-icon="mdi-rocket-launch-outline"
             rounded="lg"
             variant="outlined"
