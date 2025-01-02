@@ -15,28 +15,28 @@
     <v-spacer v-if="!mobile" />
     <v-toolbar-items v-if="!mobile">
       <v-btn
-        text="true"
+        variant="plain"
         :class="{ 'active-btn': route.path === '/' }"
         to="/"
       >
         Home
       </v-btn>
       <v-btn
-        text="true"
+        variant="plain"
         :class="{ 'active-btn': route.path === '/dashboard' }"
         to="/dashboard"
       >
         Dashboard
       </v-btn>
       <v-btn
-        text="true"
+        variant="plain"
         :class="{ 'active-btn': route.path === '/workout' }"
         to="/workout"
       >
         Workout
       </v-btn>
       <v-btn
-        text="true"
+        variant="plain"
         :class="{ 'active-btn': route.path === '/about' }"
         to="/about"
       >
