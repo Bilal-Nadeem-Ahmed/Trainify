@@ -288,9 +288,8 @@ const editWorkout = (workoutItem: IWorkout) => {
   workout.value = { ...workoutItem };
   menu.value = true;
 };
-const saveWorkout = () => {
-  console.log("Workout saved:", workout.value);
-};
+
+
 </script>
 
 <style scoped>
