@@ -2,6 +2,7 @@ interface ISet {
   id: number;
   repetitions: number;
   weight: number;
+  unit: WeightTypeEnum;
 }
 
 interface IExercise {
@@ -21,8 +22,11 @@ class Set implements ISet {
   constructor(
     public id: number,
     public repetitions: number,
-    public weight: number
-  ) {}
+    public weight: number,
+    public unit: WeightTypeEnum =  WeightTypeEnum.KG
+  ) {
+
+  }
 }
 
 class Exercise implements IExercise {
@@ -38,5 +42,11 @@ class Workout implements IWorkout {
   ) {}
 }
 
-export { Set, Exercise, Workout };
+enum WeightTypeEnum {
+  KG = 0,
+  LB = 1,
+  BW = 2,
+ }
+
+export { Set, Exercise, Workout, WeightTypeEnum };
 export type { ISet, IExercise, IWorkout };

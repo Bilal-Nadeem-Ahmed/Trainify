@@ -1,13 +1,26 @@
 <template>
   <v-container class="fill-height">
-    <v-responsive class="align-centerfill-height mx-auto" max-width="900">
-      <v-img class="mb-4" height="200" src="@/assets/logo.png" />
+    <v-responsive
+      class="align-centerfill-height mx-auto"
+      max-width="900"
+    >
+      <v-img
+        class="mb-4"
+        height="200"
+        src="@/assets/logo.png"
+      />
 
       <div class="text-center">
-        <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+        <div class="text-body-2 font-weight-light mb-n1">
+          Welcome to
+        </div>
 
-        <h1 class="text-h2 font-weight-bold">Trainify</h1>
-        <h1 class="text-body-2 font-weight-light">Your Training Simplified</h1>
+        <h1 class="text-h2 font-weight-bold">
+          Trainify
+        </h1>
+        <h1 class="text-body-2 font-weight-light">
+          Your Training Simplified
+        </h1>
       </div>
 
       <div class="py-4" />
@@ -27,7 +40,9 @@
             </template>
 
             <template #title>
-              <h2 class="text-h5 font-weight-bold">Get started</h2>
+              <h2 class="text-h5 font-weight-bold">
+                Get started
+              </h2>
             </template>
 
             <template #subtitle>
@@ -51,7 +66,6 @@
             append-icon="mdi-open-in-new"
             class="py-4"
             color="surface-variant"
-            href="https://vuetifyjs.com/"
             prepend-icon="mdi-text-box-outline"
             rel="noopener noreferrer"
             rounded="lg"
@@ -59,6 +73,7 @@
             target="_blank"
             title="Track Workouts"
             variant="text"
+            @click="router.push('/workout')"
           >
             <v-overlay
               opacity=".06"
@@ -99,5 +114,7 @@
 </template>
 
 <script setup lang="ts">
+import router from "@/router";
+
 //
 </script>
